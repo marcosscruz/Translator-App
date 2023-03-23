@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #7d06a1;
+}
+
+.contanier {
+    max-width: 690px;
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+}
+
+.wrapper {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.text-input .to-text {
+    border-radius: 0px;
+    border-left: 1px solid #ccc;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.text-input textarea::placeholder {
+    color: #E5CDEC;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls .row .icons {
+    width: 38%;
+}
+
+.controls .row .icons i {
+    width: 50px;
+    color: #CB9BD9;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    padding-left: 5px;
+}
+
+.text-input textarea::-webkit-scrollbar {
+    width: 4px;
+}
+
+.text-input select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.text-input select::-webkit-scrollbar-track,
+.controls .row select::-webkit-scrollbar-track {
+    background: #A450BD;
+}
