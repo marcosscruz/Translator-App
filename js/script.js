@@ -9,11 +9,11 @@ const translateBtn = document.querySelector("button");
 // add countries with country code to select tag
 selectTag.forEach((tag, id) => {
     for (let country_code in countries) {
-        let selected = id == 0 ? country_code == "en-GB" ? "selected" : "" : country_code == "pt-BR" ? "selected" : "";
+        let selected = id == 0 ? country_code == "en-GB" ? "selected" : "" : country_code == "de-DE" ? "selected" : "";
 
-        let opcao = `<opcao ${selected} value="${country_code}">${countries[country_code]}</opcao>`;
+        let option = `<option ${selected} value="${country_code}">${countries[country_code]}</option>`;
 
-        tag.insertAdjacentHTML("beforeend", opcao);
+        tag.insertAdjacentHTML("beforeend", option);
     }
 });
 

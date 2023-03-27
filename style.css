@@ -16,7 +16,7 @@ body {
     background: #7d06a1;
 }
 
-.contanier {
+.container {
     max-width: 690px;
     width: 100%;
     padding: 30px;
@@ -110,7 +110,7 @@ li,
     width: 8px;
 }
 
-.text-input select::-webkit-scrollbar-track,
+.text-input textarea::-webkit-scrollbar-track,
 .controls .row select::-webkit-scrollbar-track {
     background: #fff;
 }
@@ -137,7 +137,7 @@ li,
     transform: scale(0.9);
 }
 
-.contanier button {
+.container button {
     width: 100%;
     padding: 14px;
     border: none;
@@ -151,7 +151,7 @@ li,
 }
 
 @media (max-width: 660px) {
-    .contanier {
+    .container {
         padding: 20px;
     }
 
@@ -172,7 +172,7 @@ li,
         display: none;
     }
 
-    .contanier button {
+    .container button {
         padding: 13px;
         font-size: 16px;
     }
