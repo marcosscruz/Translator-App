@@ -19,8 +19,8 @@ selectTag.forEach((tag, id) => {
 
 // função para alterar os countries com um click
 exchangeIcon.addEventListener("click", () => {
-    let tempTexto = fromText.ariaValueMax,
-        tempLingua = selectTag[0].ariaValueMax;
+    let tempTexto = fromText.value,
+        tempLingua = selectTag[0].value;
 
     fromText.value = toText.value;
     toText.value = tempTexto;
@@ -28,7 +28,7 @@ exchangeIcon.addEventListener("click", () => {
     selectTag[1].value = tempLingua;
 });
 
-fromText.addEventListener("heyup", () => {
+fromText.addEventListener("keyup", () => {
     if (!fromText.value) {
         toText.value = "";
     }
